@@ -1,0 +1,30 @@
+---
+layout: post
+title:  "Introduction and purpose"
+---
+
+# What exactly am I doing?
+
+The purpose of this is to explore a variety of methods of using AI and Nueral Networks for generating Magic the Gathering cards. There are a few different experiments I want to try, and I'll be documenting them here. The goal of each experiment is to generate a new, unique and plossible Magic the gathering cards. 
+
+# Why Magic the Gathering cards?
+
+The real anser is that there isn't a particular reason. It just happend to be on my mind when I was trying to think of something fun that had a lot of data to work with. I've been interested in AI and machine learning for a while, but recently started digging into it a bit more. The cards feature a spot for generating non english but uniqe sounding names. This is actually the first part I experimented with. The nice thing about this dataset is that there are other more complext data points to work with as well. Flavor text is probably the next step up in complexity that I'll be working with. This bit of text gives a bit more context to the card, and is often a bit more descriptive. There aren't many rules here though so all the text need to do is make sense. Not the most difficult thing in the world with how language models have progressed in recent years. The card text, "mana cost", and stats (if applical) are thr next step up in complexity. The reason why these feilds are tougher to get quality results for is that they need to sort of "match" eachother. Magic the gathering cards are a game, and the cards need to be balanced. This means that the mana cost, stats, and card text need to be in some way related. For example the card needs to describe an effect that both works and is worth the cost but not too powerful. This is a bit more difficult to get right, even for a human. I am sure we can get some good or atleast intresting results though. The last part of the card that I'll be working with is the art. The art needs to be unique, and fit the theme of the card. This is a bit more difficult to get right.
+
+
+# What are the experiments?
+
+## First experiment: Generating card names with a simple Bigram Language Model
+ First up is a simple character based Bigram Language model with attention, which I'll be using to generate cards based on the card text of existing cards. I'll be using the [ScryFall Bulk Data](https://scryfall.com/docs/api/bulk-data) datasource of cards, which is a great resource for anyone wanting to do something similar. I stummbled upon a video by Andrej Karpathy on YouTube. [Here is his video on building a GPT from scratch.](https://www.youtube.com/watch?v=kCc8FmEb1nY) If you want to try it yourself you can follow along his video or if you just want to reproduce this experiment here is the [code Coming Soon](). 
+
+## Second experiment: Generating card names with a GPT-2 Language Model
+The second experiment will be to use a GPT-2 model to generate card names. I'll be using the [HuggingFace Transformers]() to fine tune the model on the card names.
+
+## Third experiment: Generating entire cards with a GPT-2 Language Model
+The third experiment will be to use a GPT-2 model to generate entire cards. I'll be using the [HuggingFace Transformers]() to fine tune the model on a json of the card data. 
+
+## Fourth experiment: Generating descriptions/captions for the card art
+The fourth experiment will be to use a  descriptions for the card art. I'll be using the [CLIP Interigator]() to fine tune the model on the card art descriptions.
+
+## Fifth experiment: Generating card art
+TBD
